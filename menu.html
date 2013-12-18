@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+<title>MENU</title>
+
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+</head>
+
+<body>
+	<nav class="menu bck-thomel color-white">
+		<a href="#inicio">Inicio</a>
+		<a href="#contacto">Contacto</a>
+	</nav>
+	<a class="button bck-thomel color-white" href="#">Ver MENU</a>
+	
+	<div class="slider">
+		<div class="photo"></div>
+
+	</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<script src="bower_components/jquery/jquery.js"></script>
+<script>
+
+/**$(".button").on("click", function(){
+
+	$(".menu").css({"left":"0"});
+	$("body").css({"left":"240px"});
+})**/
+
+$(document).on("ready",function(){
+
+$(".button").on("click", function(){
+
+	$(".menu").toggleClass("menu-push");
+	$("body").toggleClass("body-push");
+})
+})
+
+</script>
+</body>
+</html>
+
