@@ -1,0 +1,39 @@
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  bottom: 10px;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #222;
+  margin-right: 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+.arrow {
+  position: absolute;
+  top: 7.5rem;
+  z-index: 2;
+}
+.arrow.prev {
+  left: 1rem;
+}
+.arrow.next {
+  right: 1rem;
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="css/text.css" />
+	<link rel="stylesheet" href="bower_components/swiper/dist/idangerous.swiper.css" />
+	<link rel="stylesheet" href="css/helpers.css" />
+	<link rel="stylesheet" href="css/swiper.css" />
+</head>
+<body>
+	
+	<div class="swiper-container" id="swiper-header">
+		<a href="#" class="arrow next" id="arrow-header-next">Adelante</a>
+		<a href="#" class="arrow prev" id="arrow-header-prev">Atras</a>
+	    <div class="swiper-wrapper">
+	      <div class="swiper-slide bck-theme">
+	        <div class="content-slide">
+	        	<img src="images/bg-header-sm.jpg" alt="Naruto y sus amigos" class="responsive" />
+	        </div>
+	      </div>
+	      <div class="swiper-slide bck-red color-white"> 
+	        <div class="content-slide">
+	        	<h1 class="text-center">Naruto Y sus amigos</h1>
+	        	<p class="text-justify padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	        	<a href="#">F</a>
+	        	<a href="#">T</a>
+	        	<a href="#">Y</a>
+	        </div>
+	      </div>
+	      <div class="swiper-slide">
+	        <div class="content-slide bck-fondo padding">
+	        	<form>
+	        		<input type="text" placeholder="Suscibete a nuestras noticias" class="block-center padding radius border-theme"/>
+	        	</form>
+	        	<p class="text-center">
+	        		Puedes llamarnos al :<a href="tel:995631274">996631274</a>
+	        	</p>
+	        	<img src="images/naruto.png" alt="naruto"/>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="pagination"></div>
+  	</div>
+
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/swiper/dist/idangerous.swiper-2.4.min.js"></script>
+<script>
+	var mySwiper = new Swiper('#swiper-header',{
+		pagination: '.pagination',
+	    paginationClickable: true
+	});
+	$('#arrow-header-prev').on('click', function(e){
+	    e.preventDefault();/* Que no redireccione*/
+	    mySwiper.swipePrev();
+	})
+	$('#arrow-header-next').on('click', function(e){
+	  e.preventDefault();
+	  mySwiper.swipeNext();
+	})
+</script>
+</body>
+</html>
+
